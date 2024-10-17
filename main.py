@@ -22,7 +22,7 @@ def generate_frequency(semitone, cent_offset):
 # Function to generate a sine wave for a given frequency
 def generate_sine_wave(freq, duration, sample_rate):
     t = np.linspace(0, duration, int(sample_rate * duration), False)
-    tone = 0.5 * np.sin(2 * np.pi * freq * t)  # 0.5 to reduce volume
+    tone = 0.1 * np.sin(2 * np.pi * freq * t)  # 0.5 to reduce volume
     return tone
 
 # Function to convert a NumPy array to a WAV byte buffer
